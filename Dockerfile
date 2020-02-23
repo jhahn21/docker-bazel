@@ -31,7 +31,8 @@ RUN \
     cp bazel-bin/linux_amd64_pure_stripped/bazelisk /usr/bin && \
     rm -rf /tmp/bazelisk && \
     \
+    # Cleanup
     rm -rf ~/.cache/* && \
     apt-get clean
 
-ENTRYPOINT ["bazelisk"]
+ENTRYPOINT []
